@@ -65,7 +65,7 @@ local ScreenGui = Instance.new("ScreenGui")
     TextButton.TextWrapped = true
     
     TextButton.MouseButton1Click:Connect(function()
-    FrameGG:Destroy
+    FrameGG:Destroy()
     wait(2)
     local KeyLibrary = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local KeySysWindow = KeyLibrary.CreateLib("KEY SYSTEM", "BloodTheme")
