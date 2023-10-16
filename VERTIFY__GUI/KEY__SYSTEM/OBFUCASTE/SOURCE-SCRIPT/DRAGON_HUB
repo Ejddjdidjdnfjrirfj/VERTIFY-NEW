@@ -1,5 +1,5 @@
 local ScreenGui = Instance.new("ScreenGui")
-  local Frame = Instance.new("Frame")
+  local FrameGG = Instance.new("Frame")
   local Frame_2 = Instance.new("Frame")
   local UIListLayout = Instance.new("UIListLayout")
   local TextLabel = Instance.new("TextLabel")
@@ -11,14 +11,14 @@ local ScreenGui = Instance.new("ScreenGui")
   ScreenGui.Parent = game.CoreGui
   ScreenGui.ResetOnSpawn = false
 
-  Frame.Parent = ScreenGui
-  Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-  Frame.Position = UDim2.new(0.05382213, 0, 0.274487466, 0)
-  Frame.Size = UDim2.new(0, 397, 0, 395)
+  FrameGG.Parent = ScreenGui
+  FrameGG.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+  FrameGG.Position = UDim2.new(0.05382213, 0, 0.274487466, 0)
+  FrameGG.Size = UDim2.new(0, 397, 0, 395)
   
-  UICorner.Parent = Frame
+  UICorner.Parent = FrameGG
 
-  Frame_2.Parent = Frame
+  Frame_2.Parent = FrameGG
   Frame_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
   Frame_2.BorderSizePixel = 0
   Frame_2.Position = UDim2.new(0.0624024495, 0, 0.145615742, 0)
@@ -31,7 +31,7 @@ local ScreenGui = Instance.new("ScreenGui")
   UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
   UIListLayout.Padding = UDim.new(0, 10)
 
-  TextLabel.Parent = Frame
+  TextLabel.Parent = FrameGG
   TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
   TextLabel.BackgroundTransparency = 1.000
   TextLabel.LayoutOrder = 5
@@ -65,7 +65,7 @@ local ScreenGui = Instance.new("ScreenGui")
     TextButton.TextWrapped = true
     
     TextButton.MouseButton1Click:Connect(function()
-    Frame:Destroy
+    FrameGG:Destroy
     wait(2)
     local KeyLibrary = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local KeySysWindow = KeyLibrary.CreateLib("KEY SYSTEM", "BloodTheme")
